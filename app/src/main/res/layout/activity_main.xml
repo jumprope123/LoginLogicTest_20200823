@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:src="@drawable/thejoen_01"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:id="@+id/inputIdTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이메일 형식으로 입력"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:id="@+id/inputPassTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호입력"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/LogInBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="로그인"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/returnBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="돌아가기"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>
